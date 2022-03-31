@@ -1,0 +1,23 @@
+{
+  "name": "python_april",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tmax818/python_april.git"
+  },
+  "keywords": [],
+  "author": "tmax818",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tmax818/python_april/issues"
+  },
+  "homepage": "https://github.com/tmax818/python_april#readme",
+  "dependencies": {
+    "mocha": "^9.2.1"
+  }
+}
