@@ -69,13 +69,18 @@ console.log("value of the function: ", functionName('argument'))
 ---
 # Default Parameters & Named Arguments
 --
-
 >default parameters allow optional arguments and named arguments allow different order of arguments
+--
 
 ```py
-
+def divide(a,b):
+    return a/b
 ```
-
+<!-- .element: class="fragment" -->
+```py
+divide(10,2):
+```
+<!-- .element: class="fragment" -->
 
 ---
 # Debugging
