@@ -22,6 +22,7 @@
   const str4 = "bbcc";
   const expected4 = "bbcc";
 
+
   function freqTable(str) {
     const freqTable = {}
     for(let i = 0; i < str.length; i++){
