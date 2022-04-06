@@ -21,6 +21,20 @@
   
   const str4 = "bbcc";
   const expected4 = "bbcc";
+
+  function freqTable(str) {
+    const freqTable = {}
+    for(let i = 0; i < str.length; i++){
+      if(freqTable[str[i]]){
+        freqTable[str[i]] += 1
+      } else {
+        freqTable[str[i]] = 1
+      }
+    }
+    return freqTable
+  }
+
+  console.log(freqTable(str1))
   
   /**
    * Encodes the given string such that duplicate characters appear once followed
@@ -32,3 +46,5 @@
    * @returns {string} The given string encoded.
    */
   function encodeStr(str) {}
+
+console.log(encodeStr())
