@@ -34,3 +34,13 @@ const expected5 = "567765";
  * @returns {string} The longest palindromic substring from the given string.
  */
 function longestPalindromicSubstring(str) {}
+
+
+
+
+
+console.log(longestPalindromicSubstring(str1))
+console.log(longestPalindromicSubstring(str2))
+console.log(longestPalindromicSubstring(str3))
+console.log(longestPalindromicSubstring(str4))
+console.log(longestPalindromicSubstring(str5))

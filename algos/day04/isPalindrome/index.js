@@ -29,7 +29,18 @@
 
 
 
+  console.log(isPalindrome(str1))
+  console.log(isPalindrome(str2))
+  console.log(isPalindrome(str3))
+  console.log(isPalindrome(str4))
 
+
+
+
+
+
+
+// DONT CHANGE ANYTHING BELOW THIS LINE !!!!
 
 
   module.exports = { isPalindrome };
