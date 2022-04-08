@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {{session}}
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">{{session['language']}}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{session['name']}}</h6>
+          <p class="card-text">{{session['comment']}}</p>
+          <a href="/{{session['location']}}" class="card-link">{{session['location']}}</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+</body>
+</html>

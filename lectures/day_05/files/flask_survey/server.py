@@ -8,14 +8,18 @@ def index():
     return render_template("index.html")
 
 # ! our create_user route will handle the input from our form
-@app.route('/users', methods=['POST'])
+@app.route('/survey', methods=['POST'])
 def create_user():
     print(request.form)
-    print((request.environ))
-    session['ip'] = request.remote_addr
-    session['form_data'] = request.form['data']
-    session['user_name'] = request.form['user_name']11
-    return redirect('/')
+    session['name'] = request.form['name']
+    session['location'] = request.form['location']
+    session['language'] = request.form['language']
+    session['comment'] = request.form['comment']
+    return redirect('/result')
+
+@app.route('/result')
+def result():
+    return render_template('show.html')
 
     
 if __name__ == "__main__":

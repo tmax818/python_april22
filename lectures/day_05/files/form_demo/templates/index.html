@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index.html</title>
+    <title>index</title>
 </head>
 <body>
     {{session}}
-    <h1>Index</h1>
+    <h1>Welcome {{session['user_name']}}</h1>
     <h3>Create a User</h3>
     <form action='/users' method='post'>
+        <input type="hidden" name="ip" value="{{session['ip']}}">
+       NAME: <input type='text' name='user_name'>
        DATA: <input type='text' name='data'>
         <input type='submit' value='create user'>
     </form>
-
 </body>
 </html>
