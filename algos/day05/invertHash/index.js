@@ -17,3 +17,5 @@ const expected1 = { Zaphod: "name", high: "charm", dicey: "morals" };
  * @return The given object with key value pairs inverted.
  */
 function invertObj(obj) {}
+
+console.log(invertObj(obj1))

@@ -27,3 +27,8 @@
    * @returns {Object} The object with the given keys and values.
    */
   function zipArraysIntoMap(keys, values) {}
+
+
+
+  console.log(zipArraysIntoMap(keys1, vals1))
+  console.log(zipArraysIntoMap(keys2, vals2))
