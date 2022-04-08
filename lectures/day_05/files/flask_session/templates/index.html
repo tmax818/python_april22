@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index.html</title>
+</head>
+<body>
+    <h1>Index</h1>
+    <h3>Create a User</h3>
+    <form action='/users' method='post'>
+       DATA: <input type='text' name='data'>
+        <input type='submit' value='create user'>
+    </form>
+
+    <h1>User:</h1>
+    <h3>{{session['form_data']}}</h3>
+    <h3>{{session['anything_else']}}</h3>
+
+
+
+</body>
+</html>
