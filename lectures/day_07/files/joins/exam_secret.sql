@@ -1,0 +1,1 @@
+SELECT thoughts.*, users.first_name FROM thoughts LEFT JOIN users ON users.id = thoughts.user_id;
