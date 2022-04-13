@@ -1,9 +1,9 @@
 /* 
 Parens Valid
-Given an str that has parenthesis in it
+Given a str that has parenthesis in it
 return whether the parenthesis are valid
 */
-
+")("
 const str1 = "Y(3(p)p(3)r)s";
 const expected1 = true;
 
