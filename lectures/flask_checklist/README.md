@@ -1,17 +1,17 @@
 # Flask Checklist
 
-- [ ] create a separate directory for each app.
-- [ ] inside the directory for the app, run:
+- [x] create a separate directory for each app.
+- [x] inside the directory for the app, run:
 
 ```bash
 pipenv install flask=='2.0.3' pymysql
 ```
-- [ ] activate the virtual environment:
+- [x] activate the virtual environment:
 
 ```bash
 pipenv shell
 ```
-- [ ] add [server.py](server.py) with the following content:
+- [x] add [server.py](server.py) with the following content:
 
 ```py
 from flask_app import app
@@ -21,7 +21,7 @@ if __name__ == "__main__":
     app.run(debug=True)
 ```
 
-- [ ] add [flask_app](./flask_app/__init__.py) with the `__init__.py` file that contains the following:
+- [x] add [flask_app](./flask_app/__init__.py) with the `__init__.py` file that contains the following:
 
 ```py
 from flask import Flask
@@ -29,7 +29,7 @@ from flask import Flask
 app = Flask(__name__)
 ```
 
-- [ ] add [mysqlconnection.py](./flask_app/config/mysqlconnection.py) to the `config` directory inside the `flask_app` package. It should contain the following:
+- [x] add [mysqlconnection.py](./flask_app/config/mysqlconnection.py) to the `config` directory inside the `flask_app` package. It should contain the following:
 
 ```py
 import pymysql.cursors
@@ -70,7 +70,7 @@ def connectToMySQL(db):
     return MySQLConnection(db)
 ```
 
-- [ ] add the models for the application inside the `models` directory. Each non-relational table in the database should have a [model](flask_app/models/model.py). A generic model should look like this:
+- [x] add the models for the application inside the `models` directory. Each non-relational table in the database should have a [model](flask_app/models/model.py). A generic model should look like this:
 
 ```py
 from flask_app.config.mysqlconnection import connectToMySQL
@@ -125,7 +125,7 @@ class Model:
 
 ```
 
-- [ ] add the controllers for the app routes inside [flask_app/controllers/users.py](flask_app/controllers/models.py):
+- [x] add the controllers for the app routes inside [flask_app/controllers/models.py](flask_app/controllers/models.py):
 
 ```py
 from flask import render_template, request, redirect
@@ -191,8 +191,8 @@ def destroy(id):
     return redirect('/models')
 ```
 
-- [ ] add the view of MVC:
-  - [ ] add [models.html](flask_app/templates/models.html):
+- [x] add the view of MVC:
+  - [x] add [models.html](flask_app/templates/models.html):
 
 ```html
 <!DOCTYPE html>
@@ -238,7 +238,7 @@ def destroy(id):
 </html>
 ```
 
-  - [ ] add [new_model.html](flask_app/templates/new_model.html):
+  - [x] add [new_model.html](flask_app/templates/new_model.html):
 
 ```html
 <!DOCTYPE html>
