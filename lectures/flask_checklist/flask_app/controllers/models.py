@@ -25,9 +25,7 @@ def create():
 
 # ! ////// READ/RETRIEVE //////
 # TODO ROOT ROUTE
-@app.route('/')
-def index():
-    return redirect('/models')
+
 
 # TODO READ ALL
 @app.route('/models')
