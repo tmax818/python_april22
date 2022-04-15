@@ -1,4 +1,5 @@
 from flask_app.config.mysqlconnection import connectToMySQL
+from flask import flash
 from pprint import pprint
 
 DATABASE = 'checklist'
@@ -52,3 +53,18 @@ class Model:
     def destroy(cls,data:dict):
         query  = "DELETE FROM models WHERE id = %(id)s;"
         return connectToMySQL(DATABASE).query_db(query,data)
+
+    # ! VALIDATIONS
+    @staticmethod
+    def validate_model(model:dict) -> bool:
+        is_valid = True # we assume this is true
+        if len(model['column1']) < 3:
+            flash("Tyler! Remember to change this.")
+            is_valid = False
+        if len(model['column2']) < 3:
+            flash("Tyler! Remember to change this.")
+            is_valid = False
+        if len(model['column3']) < 2:
+            flash("Tyler! Remember to change this.")
+            is_valid = False
+        return is_valid

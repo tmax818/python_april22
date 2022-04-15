@@ -13,6 +13,12 @@ def new():
 @app.route('/model/create',methods=['POST'])
 def create():
     print(request.form)
+    # if there are errors:
+    # We call the staticmethod on Model model to validate
+    if not Model.validate_model(request.form):
+        # redirect to the route where the model form is rendered.
+        return redirect('/model/new')
+    # else no errors:
     id = Model.save(request.form)
     print(id)
     return redirect(f'/model/show/{id}')
