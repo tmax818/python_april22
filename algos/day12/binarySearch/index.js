@@ -21,10 +21,14 @@ const nums3 = [3, 4, 6, 8, 12];
 const searchNum3 = 3;
 const expected3 = true;
 
+const nums4 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+const searchNum4 = 3;
+const expected4 = true;
+
 // bonus, how many times does the search num appear?
-const nums4 = [2, 2, 2, 2, 3, 4, 5, 6, 7, 8, 9];
-const searchNum4 = 2;
-const expected4 = 4;
+const nums5 = [2, 2, 2, 2, 3, 4, 5, 6, 7, 8, 9];
+const searchNum5 = 2;
+const expected5 = 4;
 
 /**
  * Efficiently determines if the given num exists in the given array.
@@ -35,3 +39,9 @@ const expected4 = 4;
  * @returns {boolean} Whether the given num exists in the given array.
  */
 function binarySearch(sortedNums, searchNum) {}
+
+console.log(binarySearch(nums1, searchNum1))
+console.log(binarySearch(nums2, searchNum2))
+console.log(binarySearch(nums3, searchNum3))
+console.log(binarySearch(nums4, searchNum4))
+console.log(binarySearch(nums5, searchNum5))
