@@ -70,6 +70,13 @@ def connectToMySQL(db):
     return MySQLConnection(db)
 ```
 
+# Login and Registration
+
+- [ ] update [server.py](server.py)
+
+
+# Model Template
+
 - [x] add the models for the application inside the `models` directory. Each non-relational table in the database should have a [model](flask_app/models/model.py). A generic model should look like this:
 
 ```py
