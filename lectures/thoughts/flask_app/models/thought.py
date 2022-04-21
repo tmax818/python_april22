@@ -10,7 +10,8 @@ class Thought:
         self.content = data['content']
         self.likes = data['likes']
         self.user_id = data['user_id']
-        self.first_name = data['first_name']
+        if 'first_name' in data:
+            self.first_name = data['first_name']
         self.created_at = data['created_at']
         self.updated_at = data['updated_at']
 

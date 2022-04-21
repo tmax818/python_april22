@@ -41,4 +41,4 @@ def login():
 @app.route('/logout')
 def logout():
     session.clear()
-    return "<h1> Sorry, Bro!!</h1>"
+    return redirect('/')
