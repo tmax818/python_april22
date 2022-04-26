@@ -31,4 +31,26 @@ const expected3 = 1;
  *    floor decimals.
  * @returns {number} The result of !n.
  */
-function factorial(n) {}
+// function factorial(n) {
+//   let fact = 1;
+//   n = Math.floor(n)
+//   for(let i = 2; i <= n; i++){
+
+//     fact *= i
+//   }
+//   return fact
+// }
+
+function factorialRec(n) {
+  n = parseInt(n)
+  if(n <= 0 ){
+    return 1;
+  }
+  return factorialRec(n - 1) * n
+}
+
+
+// console.log(factorialRec(num1))
+// console.log(factorialRec(num2))
+// console.log(factorialRec(num3))
+console.log(factorialRec(3))
