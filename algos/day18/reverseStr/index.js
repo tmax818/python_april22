@@ -18,4 +18,12 @@ const expected2 = "";
  * @param {string} str
  * @returns {string} The given str reversed.
  */
-function reverseStr(str) {}
+function reverseStr(str) {
+  if (str === "") {
+    return "";
+} else {
+    return reverseStr(str.slice(1)) + str.charAt(0);
+}
+}
+
+console.log(reverseStr(str1))
