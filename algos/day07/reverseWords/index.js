@@ -23,4 +23,8 @@ const expected3 = "cba fed ihg";
  */
 function reverseWords(str) {}
 
+console.log(reverseWords(str1))
+console.log(reverseWords(str2))
+console.log(reverseWords(str3))
+
 module.exports = { reverseWords };
